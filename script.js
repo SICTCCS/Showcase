@@ -2,10 +2,12 @@ let slideIndex = [0];
 let slideIndex2 = [0];
 let slideIndex3 = [0];
 let slideIndex4 = [0];
+let slideIndex5 = [0];
 showSlides();
 showSlides2();
 showSlides3();
 showSlides4();
+showSlides5();
 
 function showSlides() {
   let i;
@@ -73,5 +75,22 @@ function showSlides4() {
   slides4[slideIndex4-1].style.display = "block";  
   dots4[slideIndex4-1].className += " active";
   setTimeout(showSlides4, 4500); // Every 1000 counts as a second
+}
+
+function showSlides5() {
+  let i;
+  let slides5 = document.getElementsByClassName("mySlides5");
+  let dots5 = document.getElementsByClassName("dot5");
+  for (i = 0; i < slides5.length; i++) {
+    slides5[i].style.display = "none";  
+  }
+  slideIndex5++;
+  if (slideIndex5 > slides5.length) {slideIndex5 = 1}    
+  for (i = 0; i < dots5.length; i++) {
+    dots5[i].className = dots5[i].className.replace(" active", "");
+  }
+  slides5[slideIndex5-1].style.display = "block";  
+  dots5[slideIndex5-1].className += " active";
+  setTimeout(showSlides5, 4500); // Every 1000 counts as a second
 }
 
