@@ -76,19 +76,21 @@ function showSlides4() {
   dots4[slideIndex4-1].className += " active";
   setTimeout(showSlides4, 4500); // Every 1000 counts as a second
 }
+
 function showSlides5() {
   let i;
   let slides5 = document.getElementsByClassName("mySlides5");
-  let dots5 = document.getElementsByClassName("dot");
+  let dots5 = document.getElementsByClassName("dot5");
   for (i = 0; i < slides5.length; i++) {
     slides5[i].style.display = "none";  
   }
   slideIndex5++;
-  if (slideIndex > slides5.length) {slideIndex = 1}    
+  if (slideIndex5 > slides5.length) {slideIndex5 = 1}    
   for (i = 0; i < dots5.length; i++) {
     dots5[i].className = dots5[i].className.replace(" active", "");
   }
-  slides5[slideIndex-1].style.display = "block";  
-  dots5[slideIndex-1].className += " active";
+  slides5[slideIndex5-1].style.display = "block";  
+  dots5[slideIndex5-1].className += " active";
   setTimeout(showSlides5, 4500); // Every 1000 counts as a second
 }
+

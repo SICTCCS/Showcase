@@ -165,7 +165,7 @@ footer img {
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
-.mySlides, .mySlides2, .mySlides3, .mySlides4, .myslides4{display: none;}
+.mySlides, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
