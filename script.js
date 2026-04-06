@@ -2,11 +2,17 @@ let slideIndex = [0];
 let slideIndex2 = [0];
 let slideIndex3 = [0];
 let slideIndex4 = [0];
+let slideIndex5 = [0];
+let slideIndex6 = [0];
+let slideIndex7 = [0];
 let LBModSlideIndex = [0];
 showSlides();
 showSlides2();
 showSlides3();
 showSlides4();
+showSlides5();
+showSlides6();
+showSlides7();
 showSlidesLBMod();
 
 function showSlides() {
@@ -113,5 +119,35 @@ function showSlides5() {
   dots5[slideIndex5-1].className += " active";
   setTimeout(showSlides5, 4500); // Every 1000 counts as a second
 }
+function showSlides6() {
+  let i;
+  let slides6 = document.getElementsByClassName("mySlides6");
+  let dots6 = document.getElementsByClassName("dot6");
+  for (i = 0; i < slides6.length; i++) {
+    slides6[i].style.display = "none";  
+  }
+  slideIndex6++;
+  if (slideIndex6 > slides6.length) {slideIndex6 = 1}    
+  for (i = 0; i < dots6.length; i++) {
+    dots6[i].className = dots6[i].className.replace(" active", "");
+  }
+  slides6[slideIndex6-1].style.display = "block";  
+  dots6[slideIndex6-1].className += " active";
+  setTimeout(showSlides6, 4500); // Every 1000 counts as a second
 }
-
+function showSlides7() {
+  let i;
+  let slides7 = document.getElementsByClassName("mySlides7");
+  let dots7 = document.getElementsByClassName("dot7");
+  for (i = 0; i < slides7.length; i++) {
+    slides7[i].style.display = "none";  
+  }
+  slideIndex7++;
+  if (slideIndex7 > slides7.length) {slideIndex7 = 1}    
+  for (i = 0; i < dots7.length; i++) {
+    dots7[i].className = dots7[i].className.replace(" active", "");
+  }
+  slides7[slideIndex7-1].style.display = "block";  
+  dots7[slideIndex7-1].className += " active";
+  setTimeout(showSlides7, 4500); // Every 1000 counts as a second
+}
