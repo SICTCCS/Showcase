@@ -93,3 +93,5 @@ function showSlides5() {
   dots5[slideIndex5-1].className += " active";
   setTimeout(showSlides5, 4500); // Every 1000 counts as a second
 }
+}
+
